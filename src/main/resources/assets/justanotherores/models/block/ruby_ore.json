@@ -1,6 +1,6 @@
 {
   "parent": "minecraft:block/cube_all",
   "textures": {
-    "all": "justanotherores:block/raw_ruby_block"
+    "all": "justanotherores:block/ruby_ore"
   }
 }

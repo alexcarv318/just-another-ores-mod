@@ -22,32 +22,39 @@ public class ModBlocks {
     public static final DeferredRegister<Block> BLOCKS = DeferredRegister.create(ForgeRegistries.BLOCKS, JustAnotherOres.MODID);
 
     private static final ResourceKey<Block> SAPPHIRE_BLOCK_KEY = getResourceKey("justanotherores:sapphire_block");
-    private static final ResourceKey<Block> RAW_SAPPHIRE_BLOCK_KEY = getResourceKey("justanotherores:raw_sapphire_block");
+    private static final ResourceKey<Block> SAPPHIRE_ORE_KEY = getResourceKey("justanotherores:sapphire_ore");
     private static final ResourceKey<Block> RUBY_BLOCK_KEY = getResourceKey("justanotherores:ruby_block");
-    private static final ResourceKey<Block> RAW_RUBY_BLOCK_KEY = getResourceKey("justanotherores:raw_ruby_block");
+    private static final ResourceKey<Block> RUBY_ORE_KEY = getResourceKey("justanotherores:ruby_ore");
 
 
     public static final RegistryObject<Block> SAPPHIRE_BLOCK = registerBlock(
     "sapphire_block", () -> new Block(
-                BlockBehaviour.Properties.ofFullCopy(Blocks.IRON_BLOCK).setId(SAPPHIRE_BLOCK_KEY).sound(SoundType.AMETHYST)
+                BlockBehaviour.Properties.ofFullCopy(Blocks.IRON_BLOCK)
+                        .setId(SAPPHIRE_BLOCK_KEY)
+                        .sound(SoundType.AMETHYST)
         )
     );
 
-    public static final RegistryObject<Block> RAW_SAPPHIRE_BLOCK = registerBlock(
-        "raw_sapphire_block", () -> new Block(
-                    BlockBehaviour.Properties.ofFullCopy(Blocks.IRON_BLOCK).setId(RAW_SAPPHIRE_BLOCK_KEY)
+    public static final RegistryObject<Block> SAPPHIRE_ORE = registerBlock(
+        "sapphire_ore", () -> new Block(
+                    BlockBehaviour.Properties.ofFullCopy(Blocks.IRON_ORE)
+                            .setId(SAPPHIRE_ORE_KEY)
             )
     );
 
     public static final RegistryObject<Block> RUBY_BLOCK = registerBlock(
             "ruby_block", () -> new Block(
-                    BlockBehaviour.Properties.ofFullCopy(Blocks.IRON_BLOCK).setId(RUBY_BLOCK_KEY).sound(SoundType.NETHERITE_BLOCK)
+                    BlockBehaviour.Properties.ofFullCopy(Blocks.IRON_BLOCK)
+                            .setId(RUBY_BLOCK_KEY)
+                            .sound(SoundType.NETHERITE_BLOCK)
             )
     );
 
-    public static final RegistryObject<Block> RAW_RUBY_BLOCK = registerBlock(
-            "raw_ruby_block", () -> new Block(
-                    BlockBehaviour.Properties.ofFullCopy(Blocks.NETHERRACK).setId(RAW_RUBY_BLOCK_KEY).sound(SoundType.AMETHYST)
+    public static final RegistryObject<Block> RUBY_ORE = registerBlock(
+            "ruby_ore", () -> new Block(
+                    BlockBehaviour.Properties.ofFullCopy(Blocks.IRON_ORE)
+                            .setId(RUBY_ORE_KEY)
+                            .sound(SoundType.AMETHYST)
             )
     );
 

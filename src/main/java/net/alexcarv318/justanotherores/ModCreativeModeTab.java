@@ -17,12 +17,14 @@ public class ModCreativeModeTab {
             .icon(() -> ModItems.SAPPHIRE.get().getDefaultInstance())
             .displayItems((featureFlagSet, output) -> {
                 output.accept(ModItems.SAPPHIRE.get());
-                output.accept(ModItems.RUBY.get());
-
                 output.accept(ModBlocks.SAPPHIRE_BLOCK.get());
-                output.accept(ModBlocks.RAW_SAPPHIRE_BLOCK.get());
+                output.accept(ModBlocks.SAPPHIRE_ORE.get());
+
+                output.accept(ModItems.RUBY.get());
                 output.accept(ModBlocks.RUBY_BLOCK.get());
-                output.accept(ModBlocks.RAW_RUBY_BLOCK.get());
+                output.accept(ModBlocks.RUBY_ORE.get());
+
+                output.accept(ModItems.ORE_DETECTOR.get());
             })
             .build()
     );

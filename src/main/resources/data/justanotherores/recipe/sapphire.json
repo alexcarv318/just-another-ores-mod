@@ -1,0 +1,11 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    "justanotherores:sapphire_block"
+  ],
+  "result": {
+    "id": "justanotherores:sapphire",
+    "count": 9
+  }
+}
